@@ -1,0 +1,436 @@
+####CLASS===>>01 saturday ##############
+
+
+javascript--->>
+===========
+------IN CLASSROOM-------------
+
+. script  small program 
+. inspried by java
+. live script first name
+. nextscap company made livescript
+. branden eich ,screem and self language expert 1995
+. functional programming based client side 
+. real name ECMAScript 
+. vbscript microsoft 
+. support all browsers
+. compile and interprate 
+. scheme and self perl and python language mother of javascript
+. nodejs run time enviroment server side
+. client side browsers
+. loosely typed language 
+. dynamically typed language 
+. function is no.1 citizen in javascript
+
+step of write code in web browser (chrome)->
+------------------------------------
+
+.about:blank
+.inspect
+.consol
+
+variable diclartion->
+---------------
+> var a;
+.typeof a; (operator)
+
+>a=10;
+> typeof a;
+< number
+
+> a=Number.MAX+SAFE_INTEGER;
+< 9007199254740992
+
+var b=9007199254740992n;(bigint)
+
+bigint-->>
+=======
+
+.bigint+bigint - right
+.bigint+another - X wrong
+
+
+
+> var n=55/0;
+< infinity
+
+n+s=s
+s+n=s
+n+n=n
+
+.10-"10";
+.subtract kr dega
+."yogi"-"panchal"
+.NaN (not a number) illegal result not be praduce number
+
+> 10+NaN;
+< NaN
+
+> 10+infinity;
+< infinity
+
+> parseInt("10")+5;(for typecast /conversion )
+15
+
+> parseFloat("10.0")+5;(for typecast /conversion )
+< 15.0
+
+
+.no char only string
+> name.length;(find the length)
+. string behav like an object
+
+
+. `` for multiline string 
+. shift + enter for next line 
+
+
+.console.log()(for print the value like System.out,println)
+.consol =object
+.log=function
+
+.string interpolotion
+
+>a=true;
+> typeof a;
+< boolen
+
+>10+true;
+<11
+.null-->
+------
+jab address nhi rakhte  tab ham null use krte h
+
+var arr=[10,20,30];
+> typeof arr;
+< boject;
+
+> arr=null;
+< true(besause both type is object)
+
+.null=value type
+
+> typeof null;
+> object
+
+Number->
+-----
+
+1.0-9
+           - Success value
+2.Decimal
+
+3.infinity  - error value
+
+
+> var a=10;
+> var b=20;
+> var s="A is ${a} and B is ${b}"----(string interpolation)
+< A is 10 and B is 20
+
+
+N+B=N
+B+N=N
+N+N=N
+B+B=B
+
+
+N+undefined=NaN
+N+infinity=infinity
+N+NaN=NaN
+NaN+NaN=NaN
+
+symbol--->
+===========
+
+interduce in 2015  ES6
+to genertae unique or return unique
+vary rare to use
+map->key-unique
+   ->value
+value type and primitive type datatype is---->
+
+1.number
+2.bigint
+3.string
+4.boolean
+5.null
+6.undefined
+7.symbol
+
+
+> undefined==null;(lossy compairison)
+< true
+
+> typeof undefined;
+< undefined
+
+> typeof null;
+< object
+
+10+undefined=NaN
+10+null=10
+10-null=10
+10+true=11
+10-false=9
+
+> 10=="10";(lossy compairison)
+< true
+lossy compairison---->>(==)
+=================
+L.H.S=R.H.S
+1.conversion("10" internaly)
+2.comparision
+
+strict compairison-->(===)
+=================
+1. type check
+2. if type are same then value compair
+
+> undefined===null;
+< false
+> 10==="10";
+< false 
+
+undefined-power high
+null-power low
+
+
+Referal Data Type ---->
+=================
+
+
+.Reference values that refer to objects.
+.JS engine allocate memory in Heap for this type of Data
+.Array ->
+       arr = [10,20,20];
+    arr contains the reference of array [10,20,20]
+            
+        
+.Type Cast--->
+==========
+
+.parseInt()
+.parseFloat()
+    
+
+
+
+
+
+
+
+
+
+
+----------WELL MENTAINED------
+
+
+Source {
+    -- Book: Speaking With JavaScript
+    -- Web: Mdn Reference
+}
+Class 1{
+    --JS Facts{
+        --Js is a Scripting language
+        --Scripting is small or light weight
+        --JS is functional based programming language
+        --Brenden Eich Built js in 10 days
+        --Firstly called js as livescript
+        --From 1995 livescript called as JavaScript
+        --Official name of js today is ECMAScript
+        --Every Browser has there JS engine which compile and run the JS on browser
+        --Because every browser have different so js can behave differently in every device
+        --JavaScript Borrowed from Scheme(General Purpose programming language), AWK(First Class Function),Self(Prot)
+        --JS is loosely type lang
+    } 
+    --Data Type{
+        --primitive data type {
+            -1-number{
+                --int,float,short,long all are numbers
+                --this data type can contain 64 bit number
+                --Success Value (0 to 9 , Decimal number)
+                --Failure Value (Infinity , NaN) (number/0)
+                --NaN (Not a Number)
+                --number + string = string
+                --number - string = Number
+                --number + boolean = number
+                --number + undefined = NaN
+                --number + infinity = infinity
+                --string interpolation (use ${a} inside string to dynamically render a inside string)
+            }
+            -2-bigint{
+                --20000n is a bigint number 
+                --bigint can be operated with bigint only
+            }
+            -3-string
+            -4-boolean {
+                --number + boolean = number
+            }
+            -5-null {
+                --it is a Value
+                --if address is not present the value is assigned null to an object only because object contains reference
+                --typeof undefined (undefined)
+                --typeof null (object) 
+                --null == undefined (true , But == is a loose compairison , "==" it first convert easy prey to different thenn compare)
+                --null === undefined (false, === is a strict compairision , First check the type then compare the value)
+            }
+            -6-symbol{
+                --return unique
+            }
+            -7-undefined
+        }
+        --Referal Data Type {
+            --Reference values that refer to objects.
+            --JS engine allocate memory in Heap for this type of Data
+            --Array {
+                -- arr = [10,20,20];
+                -- arr contains the reference of array [10,20,20]
+            }
+        }
+    }
+    --Type Cast{
+        --parseInt()
+        --parseFloat()
+    }
+    --Loose Compairision(==){
+        -- First convert 
+        -- then compare the value
+        -- example {
+            --10 == "10"  
+            --return true 
+            --because first == it convert to 10 (number) to string then compare with "10" (string)
+        }  
+    }
+    --Strict Comparision (===){
+        -- First type check 
+        -- then compare the value
+        -- example {
+            --10 == "10"  
+            --return false 
+            --because first === it checks the type of 10 that is number  and "10" that is string so it type checks and get different so it exits without checking value and gives false
+        }
+    }
+}
+
+
+
+
+
+
+########## CLASS 2 SUNDAY   ##########################
+
+
+> var a=10;
+> var b=a;
+. a value copy into A
+> ++b;
+. value type is also immutable type
+. original never change whenever you do a change it do change in copy
+. x=x+5;
+. first make copy then reassine 
+> var arr=[10,20,30];refferal type 
+> var arr2=arr;
+. copy the adress of arr an assine into arr2 
+. referal type is mutable type
+> arr2==arr;
+< true
+> arr2===arr;
+< true
+> arr2[0]=100;
+> arr2=[100,20,30]
+> arr=[100,20,30]
+. how to convert mutable type into immutable type(array cloning)
+> var arr3=[...arr];
+. spred operator(...)
+
+ 
+
+.referance type/mutable-->
+1.Array[]
+2.object{}
+
+
+
+
+
+
+
+
+> var c=[a,b];
+> c[0][0]=10;(2D array)
+> var d=[...a,...b];(flat arrray)
+
+> "hello".includes(e);
+< true;
+
+ 
+> var obj={};
+> typeof obj;
+< object
+
+> var t=[];
+> typeof t;
+< object
+
+. array access by index , contiguas memory allocation
+
+
+>  var temp={'delhi':28,'agra':30};
+. object->key value pair
+> temp['delhi'];
+> temp.delhi
+< 28
+< 28
+> var dhoni={name:'ms dhoni',age:38,6:100,50:45,100:20,'perm adress':'dhoni address'};
+. operator work with only string and onlo sepcial op string
+. [] access both numeric and string key,work with dynamic key 
+. ['y'](assosiative array)
+
+
+loop ---->
+------
+for(var i=0;i<arr.length;i++){
+    consol.log(element);
+}
+loop(for)is called loop besause we know the starting and ending point
+
+
+itrator---->
+--------
+for(var element of arr)
+{
+    consol.log(element);
+}
+using for of loop we can traverse the arr 
+
+
+
+
+
+for(let key in dhoni){
+    consol.log(key,dhoni[key]);
+}
+usin for in loop we can traverse the object and arr besause in arr index is use as a key
+
+for(var key in dhoni){
+    consol.log(key,arr[key]);
+}
+
+
+
+
+
+. for of loop interduce in ES6
+
+. for of loop traves the arr
+. for in loop traves object
+
+
+.wrapper object(type)---->
+===================
+
+
+
+primitives are not obj they have pure values.it does't
+
