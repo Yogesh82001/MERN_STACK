@@ -430,8 +430,37 @@ for(var key in dhoni){
 ===================
 
 
-yogesh
+
 primitives are not obj they have pure values.it does't
 
 
-Added
+
+
+
+
+
+###################Class 3 ####### 11/3/23 ###########
+
+
+ 2. chrome canaey for dev 
+ 1.chromiun
+ 3.chrome 
+
+
+
+ IQ- spreed operator
+ IQ- immutability v/s mutability
+ IQ - value typed v/s referance type
+ IQ - can you null value type 
+ IQ - null==undefined and null===undefined 
+ IQ- == v/s ===
+
+
+ type casting run time 
+
+
+ u+n=NaN
+ u+s=S
+ null+n=N
+
+
