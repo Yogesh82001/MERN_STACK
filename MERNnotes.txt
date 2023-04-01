@@ -1672,8 +1672,15 @@ Show the Highest and Lowest Price Product   ---- Done
 Show the Sum of all Products whose price is >2000.----Done 
 
 
-
-
-
  
+##################### Class-7 ########### saturday  #########################
+
+
+  
+script tag -> .egle
+              . lazy
+    .Async-html and js dono sath chalte h 
+    .defer-js lode ho jati h memory me but baad me chalti h /lazy
+    .simple script tag -egle/jab js head me dete h to phele js chalti h then html chalti h besause html is interpreted language 
+
 

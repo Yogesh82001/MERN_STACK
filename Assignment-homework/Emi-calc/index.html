@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI-calculater</title>
+    <script src="./emilogic.js" defer></script>
+    <script src="./emicontroller.js" defer></script>
+</head>
+<body>
+    <div>
+        <label for="">Loan Amount </label>
+    <input type="number" id="loanAmount" placeholder="Enter Amount ">
+    </div>
+    <br>
+   <div>
+    <label for="">Interest Rate </label>
+    <input type="number" id="irate" placeholder="Enter Interest Rate">
+    
+   </div>
+   <br>
+   <div>
+    <label for="">Time Duration </label>
+    <input type="number" id="duration" placeholder="Enter Time Duration in Year ">
+    
+   </div>
+   <br>
+   <button id="calculate_emi">Calculate_EMI</button>
+   <div>
+    <hr>
+    <fieldset>
+        <legend>EMI Details</legend>
+        <p>EMI per month : <span id="emi"></span></p>
+        <p>Total Interest : <span id="tinterest"></span></p>
+        <p>Total Amount : <span id="tamount"></span></p>
+        
+    </fieldset>
+   </div>
+    
+</body>
+</html>
