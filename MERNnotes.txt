@@ -1683,4 +1683,28 @@ script tag -> .egle
     .defer-js lode ho jati h memory me but baad me chalti h /lazy
     .simple script tag -egle/jab js head me dete h to phele js chalti h then html chalti h besause html is interpreted language 
 
+questions->
+    -counter-app
+    -salary-slip
+    -EMI calc
 
+./->same folder
+../->perent/previous folder 
+
+
+######################## Class-8 ############## Sunday #######################
+
+binding->
+1.default binding 
+2.implicit binding
+3.explicit binding 
+
+
+default binding -> function name();->ye window se access krga 
+implicit binding -> obj name.function name()->haam   btate h  kha se acces krna h
+
+
+string interpulation 
+`my name is ${name}`->like a templates ``multiline 
+es6 onword module support 
+type="module"
