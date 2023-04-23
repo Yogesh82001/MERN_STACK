@@ -384,7 +384,7 @@ Class 1{
 > var dhoni={name:'ms dhoni',age:38,6:100,50:45,100:20,'perm adress':'dhoni address'};
 . operator work with only string and onlo sepcial op string
 . [] access both numeric and string key,work with dynamic key 
-. ['y'](assosiative array)
+. ['y'](    assosiative array   )
 
 
 loop ---->
@@ -1708,3 +1708,117 @@ string interpulation
 `my name is ${name}`->like a templates ``multiline 
 es6 onword module support 
 type="module"
+
+
+tic tac toe  
+network base 
+1.invite a friend -id number 
+2.join friend -enter id number      room 
+networking -firebase (cloudDB)
+Async 
+call+forget
+callback/promise
+sync(fast/block)
+Async(slow/non-block)
+code in execution called is thread (worker)
+thread(cpu core (event loop))
+js is single thread   
+sync(fire and wait )
+ 
+
+
+promise - than , catch 
+second palyer is not join
+
+
+
+
+problem second player is not jion -> not show in firebase 
+
+
+
+#############################class->9 saturday##############################
+
+ping command se haam command prompet se kisi bhi device ka ip address pta lga skta h 
+
+this is a keyword and it is hold current calling object referance 
+
+in this class we can made simple tictactoe not a network base 
+
+
+
+
+############## 23/04/23 #########################
+
+
+
+music web app ->
+------------
+
+spotify 
+--------
+
+
+1. get all artist 
+2.particular artist -> song -web service/web API (iTunes )
+                    -> play 
+
+how to make a network call  
+
+singleton object 
+prototype object 
+async 
+
+
+http and https - methods- POST, GET, PUT, PATCH, and DELETE. 
+in this application we use only -> get(r),put(u),post(w),delete(d)-CRUD operations done 
+
+function giveMoney(money){
+    console.log('money rec ', money);
+    console.log("Marry with hero ");
+}
+function doWork(callBackFn){
+setTimeout(()=>{
+    console.log("Collect the Money ");
+    callBackFn( "Money Bag ");
+}, 4000);
+}
+console.log("Go and Take Money Bag ");
+doWork(giveMoney);
+console.log('Fn Ends');     
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
