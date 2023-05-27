@@ -1708,10 +1708,10 @@ string interpulation
 `my name is ${name}`->like a templates ``multiline 
 es6 onword module support 
 type="module"
-
+ 
 
 tic tac toe  
-network base 
+network base  
 1.invite a friend -id number 
 2.join friend -enter id number      room 
 networking -firebase (cloudDB)
@@ -1748,7 +1748,7 @@ in this class we can made simple tictactoe not a network base
 
 
 
-############## 23/04/23 #########################
+############## 23/04/23  class11(sunday) #########################
 
 
 
@@ -1788,21 +1788,307 @@ doWork(giveMoney);
 console.log('Fn Ends');     
 
 
+############# class 12 ############# saturday ##################
 
 
    
 
+console.log("Start ");
+const pr = doWork();
+console.log("Promise is ", pr);
+
+function doWork(){
+    const promise = new Promise((resolve, reject)=>{
+
+
+    setTimeout(()=>{
+        resolve("Promise Resolve ");
+    },5000);
+        });
+    return promise;
+}
+VM857:1 Start 
+VM857:3 Promise is  Promise {<pending>}
+undefined
+console.log("Start ");
+const pr = doWork();
+console.log("Promise is ", pr);
+pr.then(data=>console.log("Data is ",data)).catch(err=>console.log("Error is ",err));
+function doWork(){
+    const promise = new Promise((resolve, reject)=>{
+
+
+    setTimeout(()=>{
+        resolve("Promise Resolve ");
+    },5000);
+        });
+    return promise;
+}
+VM1137:1 Start 
+VM1137:3 Promise is  Promise {<pending>}
+Promise {<pending>}
+VM1137:4 Data is  Promise Resolve 
+console.log("Start ");
+const pr = doWork();
+console.log("Promise is ", pr);
+pr.then(data=>console.log("Data is ",data)).catch(err=>console.log("Error is ",err));
+function doWork(){
+    const promise = new Promise((resolve, reject)=>{
+
+
+    setTimeout(()=>{
+        //resolve("Promise Resolve ");
+        reject("Some Problem Occur ");
+    },5000);
+        });
+    return promise;
+}
+VM1226:1 Start 
+VM1226:3 Promise is  Promise {<pending>}
+Promise {<pending>}
+VM1226:4 Error is  Some Problem Occur 
+function cube(num, time){
+    const p = new Promise((resolve, reject)=>{
+             setTimeout(()=>{
+                if(num>=5){
+                    reject("Number is too big for cube "+num);
+                }
+                 resolve(num**3);
+    }, time);
+    });
+    return p;
+
+}
+undefined
+Promise.all([cube(3,2000), cube(4,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2343:1 (3) [27, 64, 8]
+Promise.all([cube(13,2000), cube(4,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2351:1 Error is  Number is too big for cube 13
+Promise.allSettled([cube(13,12000), cube(4,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2385:1 (3) [{…}, {…}, {…}]
+Promise.all([cube(13,12000), cube(4,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2402:1 Error is  Number is too big for cube 13
+Promise.allSettled([cube(13,12000), cube(4,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2410:1 (3) [{…}, {…}, {…}]0: {status: 'rejected', reason: 'Number is too big for cube 13'}1: {status: 'fulfilled', value: 64}2: {status: 'fulfilled', value: 8}length: 3[[Prototype]]: Array(0)
+Promise.race([cube(13,1000), cube(4,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2449:1 Error is  Number is too big for cube 13
+Promise.race([cube(3,1000), cube(4,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2473:1 27
+Promise.any([cube(13,1000), cube(14,5000), cube(2,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2512:1 8
+Promise.any([cube(13,1000), cube(14,5000), cube(22,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2522:1 Error is  AggregateError: All promises were rejected
+Promise.any([cube(3,1000), cube(2,5000), cube(3,8000)]).then(dataArr=>console.log(dataArr)).catch(err=>console.log("Error is ", err));
+Promise {<pending>}
+VM2560:1 27
+async function total(){
+    console.log("Starting Total ");
+   const r =  await cube(3,3000) + await cube(4,4000) + await cube(2,10000);
+    console.log("R is ",r);
+    return r;
+}
+const p = total();
+console.log(p);
+p.then(data=>console.log(data)).catch(e=>console.log(e));
+VM3504:2 Starting Total 
+VM3504:8 Promise {<pending>}
+Promise {<pending>}
+VM3504:4 R is  99
+VM3504:9 99
+
+
+class ->16 saturday ##########################################
+
+
+location.href "song.hgtml" ?(querary string  )singername= 
+urlsearchparams data bhejne ka kaam krta h 
+
+
+
+
+java(hyphon jar)- my export java game project problem solution 
+
+
+
+########## Date ->13/05/23 #### saturday #####################################
 
 
 
 
 
+########### Date ->21/05/23 ##################################
+
+music-app complited  
+
+React start now -> 21/05/23
+
+importance of React->
+--------------------
+
+importance of view (view is vary complex like facebook anbd linkedin etc)
+view is the cretical segment of the MVC methodology 
+earlier framework were typically focused on bullding MVC based application 
+view base framework is basically centic on the user interface which type includes what people see 
+to achive thi aspect it defines the defines the concepts of components 
+react is a library which tries to achieve this approach using the component based strategy 
+react is a js library - one of the most popular ones with over 100000 stars on github 
+react is use to build user interface (ui) on the front end 
+react is not a framework (unlike angular, which is more opinionated)
+react is open source project created by facebook 
+it is the view layer of an mvc application(mvc-model view controller)
+use for SPA and component based devlopment  
+react also streamlines how data is stored and handled,using state and props(property)
+
+
+Top 3 reasons to learn react js ->
+---------------------------------
+
+component based devlopment 
+virtual DOM (light weight ) 
+state - internal work  and props - exteranal work
+in virtual dom diffalgo work and after compartision we done the patching 
+jsx- javascript and xml    
+
+
+virtual DOM ->
+--------------
+
+first understand what is DOM ->
+---------------------------------
+DOM (document object model) -> it take HTML element and wraps then in an object with a tree-structure 
+this provides an API that allow us to traverse nodes (HTML element ) and manipulate them 
+the DOM trees are huge nowaday.Since we are more and more pushed towards 
+dynamic web apps (single page applications-SPAs).we need to modify the DOM tree incessantly and a lot.
+And this is a real performaance and devlopment pain .
+
+virtual DOM(VDOM)->
+------------------
+first of all - the virtual DOM was not invented by react but uses it and provides it for free 
+virtual DOM is just a copy of the orignal DOM kept in the memory and synced with the real DOM by librarys
+ such as ReactDOM a virtual DOM object has the same properties as a real DOM object but it lacks the real 
+ things
+ power to directly change what's on the screen 
+the virtual DOM is a light-weight abstraction of the DOM . 
+you can think od it as a copy of the DOM,that can be updated without affecting the actual DOM. 
+it has all the same properties as the real DOM object but doesn't have the ability to write to the screen 
+like the real DOM . the virtual DOM gains it's speed and efficiency from the fact that it's lightweight .
+ in fact a new virtual DOM is created after the every re-render.
+ the virtual DOM(VDOM) is a programing concepts where an idea or virtual repersentation of a UI is kept in memory 
+ and synced with real DOM by a library such as REACTDOM the process is called "reconcillation".
+ in react world the team "virtual DOM" is useally associated with React elements since they are the objects 
+ representing the user interface .
+
+ updation techniques->
+ -----------------------
+ following when to update 
+ there are a couple of ways in which components can tell when a date update occurs and eiether or not it needs to re-render 
+ to the UI :
+ Dirty checking(slow)->
+ ---------------------
+ checks through all nodes data at a regual interval to see if there have been any changes. this is inefficent 
+ because it requires traversing every single node recursively to make sure it's data isn't dirty(out of date )
+ this was is used in Angular.js
+
+ Observable(fast)->
+ ---------------------
+ components are responsible for listening to when an update takes place. since the data is saved on the state,
+ components can simply listen to events on the state and if there is an update , it can re-render to the UI.
+ React us it .
+
+ virtual DOM works->
+ -------------------
+ when you render a JSX element , every single virtual DOM object gets updated 
+ once the virtual DOM has updated, then react compars the virtual DOM with a 
+ Virtual DOM snapshot that was taken right befor the update.
+ by comparing the new virtual DOM with a pre-update version ,react figures but exectly whuch virtaul DOM objects
+ have changed .this process is called "diffing".
+ once react konws which virtual DOM objects have changed,then react updates those objects and only those objects on the real DOM 
+ this makes a big different react can update only the necessary parts of the DOM.
+ react's reputation for performance comes largely from this innovation .
+
+ Batch update ->
+ -----------------
+ react follws a batch update mechanism to update the real DOM . hence leading to _reased performace this means that updates to the real DOM are sent in batches,
+ _cead of sending updates for every single change in state.
+ we repainting of the the UI is the most expensive part and react effeciently ensures that the real DOM recives only the batched 
+ updates to repaint the UI.
+
+
+react.dev/react.org   ->learn
+node 
+npm
+npx on word node v-5 
+react ke baad 2 chiz imp h - typescript and nextjs(frame work of react ) and ecma script 
+client side rendering (pre rendring )
 
 
 
 
 
+################### date - 27/05/23 ################################
 
+
+create react app -
+1. to build component 
+2. jsx support 
+3. virtual DOM (internally)
+4. web pack 
+5.testing -  1. unit testind 
+             2. interigation testing 
+
+note- if we want to run js outside the browser then we want any envorment like nodejs.
+      npm- node package manager (keep all the package of node core and advance both )it is a part of interigation .
+      npx- node package executer 
+
+
+   mkdir react-examples-code -> folder in nodejs folder in over system in vs terminal 
+   npx create-react-app firstapp -> set envorment for react not be install-resion of npx / small case project name 
+   Yarn build by facebook . yarn is a reposityary system and brother of npm . eairly me npm ke package shi se manage nhi the so facebook ne yarn bnayaya tha .
+   yarn can be pull yarn db (repositary ) facebook 
+   react script - dev to deployement and deployment to dev 
+
+in npx create-react-app is depricated now we can use the nextjs
+
+cls 
+cd firstapp 
+npm start port no by default 3000 
+
+pwa - progress web app 
+website behave like a mobile app (add home screen gothrej interiar )
+ minifest.json - we can use pwd 
+only single html page (spa)
+robots.txt - secure file 
+conga is first pwa website make by nigeriya country 
+src - react source code 
+app.js is first component 
+app.test.js 
+index.js - vdom to dom 
+            attch root operend - first component is root (firstapp) 
+
+package.json- meta data - project version , dependeacy , script and etc .
+package.lock.json - jab haam team me kaam krte h tab vo use hota h data ko track krke rakhti h 
+
+readme.md - markdown readme docoment - like whatsapp me bold text send krte h * lga kr 
+
+svg-scaller vector graphic 
+reportwebvitals.js - genrate the performance report alag alag trha se report genrate algo 
+
+
+component -  is having  function in js 
+every function is a compenent in jsx 
+sare component return krtr krte root tak aayega or fir web page ban jayega (component devlopment )
+every component ko last me vdom hoga 
+index.js vdom or dom ko connect krti h 
+compenent - jsx - chota html - React DOM 
 
 
 
